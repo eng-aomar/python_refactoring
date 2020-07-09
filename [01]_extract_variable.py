@@ -7,11 +7,12 @@
 
 
 def calculate_interest(principle, time, rate):
+    ''' This function calculates the interest where principle is loan amount, time = loan period in years, rate = interst_rate per year  '''
     if principle > 0:
         return (principle * time * rate) / 100
     else:
         return None
 
 
-#intrest_rate = calculate_interest(5, 6, 12)
-# print(intrest_rate)
+intrest_rate = calculate_interest(100, 5, 5)
+print("interst =", intrest_rate, 'JOD')
