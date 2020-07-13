@@ -8,6 +8,8 @@
 
 seniority, monthsDisabled, isPartTime = 5, 17, True
 
+# [problem] :You have multiple conditionals that lead to the same result or action.
+
 
 def disabilityAmount():
     if seniority < 2:
@@ -18,6 +20,8 @@ def disabilityAmount():
         return 0
     # Compute the disability amount.
     # ...
+
+# [Solution] :Consolidate all these conditionals in a single expression.
 
 
 def disability_Amount():
